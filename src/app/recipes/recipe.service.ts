@@ -13,7 +13,7 @@ private recipes: Recipe[] = [
     new Recipe(
       'Dark Chocolate Lava Cake',
       'Spongy Cake - Full of Dark Chocolate',
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Recipe_logo.jpeg/480px-Recipe_logo.jpeg',
+      'https://www.pngitem.com/pimgs/m/479-4790604_lava-cake-png-picture-chocolate-cake-transparent-png.png',
       [
         new Ingredients('Sweet Chocolates', 24),
         new Ingredients('Butter',1),
@@ -32,6 +32,10 @@ private recipes: Recipe[] = [
 
   getRecipes(){
     return this.recipes.slice();
+  }
+
+  getRecipe(index){
+    return this.recipes[index];
   }
 
   addIngredientsToShoppingList(ingredients: Ingredients[]){
