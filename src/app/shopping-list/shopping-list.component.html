@@ -1,9 +1,9 @@
-<div class="row">
+<div class="row pl-2">
     <div class="col-md-10">
         <app-shopping-edit></app-shopping-edit>
     <hr>
     <ul class="list-group">
-        <a class="list-group-item text-decoration-none text-dark" style="cursor: pointer;" *ngFor="let ingredint of ingredients">
+        <a class="list-group-item text-decoration-none text-dark" style="cursor: pointer;" *ngFor="let ingredint of ingredients, let i = index" (click)="onEditItem(i)">
             {{ingredint.name}}&nbsp;({{ingredint.amount}})
         </a>
     </ul>
