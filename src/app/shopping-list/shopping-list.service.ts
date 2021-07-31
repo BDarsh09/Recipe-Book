@@ -42,4 +42,10 @@ addIngredientsForShopping(ingredients: Ingredients[]){
   this.ingredients.push(...ingredients);
   this.ingredientsChanged.next(this.ingredients.slice());
 }
+
+deleteIngredientForShopping(index: number){
+  this.ingredients.splice(index, 1);
+  this.ingredientsChanged.next(this.ingredients.slice());
+}
+
 }
