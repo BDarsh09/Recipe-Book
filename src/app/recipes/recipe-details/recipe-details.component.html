@@ -1,11 +1,11 @@
 <div class="row my-3">
     <div class="col-sm-1 mr-3">
-        <img src="https://www.pngitem.com/pimgs/m/479-4790604_lava-cake-png-picture-chocolate-cake-transparent-png.png" alt="" style="height: 200px;width: 200px;" class="img-responsive">
+        <img [src]=recipe?.imagePath alt="" style="height: 200px;width: 200px;" class="img-responsive">
     </div>
 </div>
 <div class="row">
     <div class="col-md-7">
-        <h2>{{recipe.name}}</h2>
+        <h2>{{recipe?.name}}</h2>
     </div>
     <div class="col-md-5">
         <div class="btn-group dropdown">
@@ -15,7 +15,7 @@
             <ul class="dropdown-content">
                 <li class="dropdown-item"><a (click) = "onAddToShoppingList()" style="cursor:pointer">Shopping List</a></li>
                 <li class="dropdown-item"><a (click) = "onEditRecipe()" style="cursor:pointer">Edit Recipe</a></li>
-                <li class="dropdown-item"><a style="cursor:pointer">Delete Recipe</a></li>
+                <li class="dropdown-item"><a (click) = "onDeleteRecipe()" style="cursor:pointer">Delete Recipe</a></li>
             </ul>
         </div>
     </div>
@@ -36,13 +36,13 @@
 </div> -->
 <div class="row">
     <div class="col-md-12 my-2">
-        {{recipe.description}}
+        {{recipe?.description}}
     </div>
 </div>
 <div class="row mt-2">
     <div class="col-md-4">
         <ul class="list-group">
-            <li class="list-group-item" *ngFor="let ingredient of recipe.ingredients">
+            <li class="list-group-item" *ngFor="let ingredient of recipe?.ingredients">
                 {{ingredient.name}} - {{ingredient.amount}}
             </li>
         </ul>
