@@ -35,16 +35,16 @@ export class AuthComponent implements OnInit {
       }else {
         authObs = this.authService.signup(email, password);
       }
+
+      authObs.subscribe(resData => {
+        this.showLoader = false;
+        console.log(resData);
+      }, errorMessage => {
+        this.showLoader = false;
+        this.error = errorMessage;
+      });
     }
-
-    authObs.subscribe(resData => {
-      this.showLoader = false;
-      console.log(resData);
-    }, errorMessage => {
-      this.showLoader = false;
-      this.error = errorMessage;
-    });
-
+    
     form.reset();
   }
 
