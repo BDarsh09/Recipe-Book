@@ -9,7 +9,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/recipes', pathMatch: 'full'},
+  {path: '', redirectTo: '/login', pathMatch: 'full'},
   {path:'recipes', component: RecipesComponent, children : [
     {path: '', component: RecipeStartComponent},
     {path: 'new', component:EditRecipeComponent},
