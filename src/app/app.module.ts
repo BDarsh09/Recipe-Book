@@ -47,7 +47,6 @@ import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinne
   ],
   providers: [RecipeService,
     ShoppingListService,
-    RecipeService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptorService,

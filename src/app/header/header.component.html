@@ -6,13 +6,12 @@
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li routerLinkActive='active'><a routerLink='/login' *ngIf="!isAuthenticated">Login</a></li>
             <li class="mx-4" routerLinkActive='active'><a routerLink = '/recipes' *ngIf="isAuthenticated">Recipes</a></li>
             <li routerLinkActive='active'><a routerLink = '/shopping-list'>Shopping List</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li *ngIf="isAuthenticated">
-                <button class="btn btn-primary" style="cursor:pointer">Logout</button>
+                <button class="btn btn-primary" style="cursor:pointer" (click)="onLogOut()">Logout</button>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle mr-3" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage</a>
