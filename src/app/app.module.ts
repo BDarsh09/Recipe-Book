@@ -1,7 +1,4 @@
-import { AuthModule } from './auth/auth.module';
 import { SharedModule } from './shared/shared.module';
-import { ShoppingListModule } from './shopping-list/shopping-list.module';
-import { RecipesModule } from './recipes/recipes.module';
 import { AuthInterceptorService } from './auth/auth-interceptor.service';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
 import { RecipeService } from './recipes/recipe.service';
@@ -23,10 +20,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RecipesModule,
-    ShoppingListModule,
-    SharedModule,
-    AuthModule
+    SharedModule
   ],
   providers: [RecipeService,
     ShoppingListService,
