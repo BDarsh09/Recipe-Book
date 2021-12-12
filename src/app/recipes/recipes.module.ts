@@ -10,6 +10,7 @@ import { RecipeItemComponent } from './recipe-list/recipe-item/recipe-item.compo
 import { RecipeDetailsComponent } from './recipe-details/recipe-details.component';
 import { RecipeListComponent } from './recipe-list/recipe-list.component';
 import { RecipesComponent } from './recipes.component'; 
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -23,7 +24,7 @@ import { RecipesComponent } from './recipes.component';
     EditRecipeComponent
   ],
   imports: [
-    CommonModule,
+    SharedModule,
     RouterModule,
     ReactiveFormsModule,
     FormsModule,
