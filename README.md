@@ -1,9 +1,9 @@
 # RecipeBook
 
-Deployed - https://recipe-book-1a05e.firebaseapp.com/login
-User creds for Login
-Username - mickeymarry9997@gmail.com
-Password - mickey9997
+Deployed - https://recipe-book-1a05e.firebaseapp.com/login  
+User creds for Login  
+Username - mickeymarry9997@gmail.com  
+Password - mickey9997  
 
 
 
