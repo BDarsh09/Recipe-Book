@@ -1,5 +1,12 @@
 # RecipeBook
 
+Deployed - https://recipe-book-1a05e.firebaseapp.com/login
+User creds for Login
+Username - mickeymarry9997@gmail.com
+Password - mickey9997
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
 
 ## Development server
